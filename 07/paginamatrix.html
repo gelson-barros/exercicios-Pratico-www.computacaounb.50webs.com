@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Exemplo de Página Matrix</title>
+        <link
+            rel="stylesheet"
+            href="folhadeestilo.css"
+            type="text/css"
+            media="all"
+        />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <script runat="server">
+            <!-- Begin
+            var matrix_window;
+            function MatrixWrite(string, bold, italic, speed) {
+                var height = window.screen.height;
+                var width = window.screen.width;
+                var win_dimensions =
+                    "height = " +
+                    eval(height + 10) +
+                    ", width = " +
+                    eval(width + 30);
+                matrix_window = window.open(
+                    "blank.htm",
+                    "matrix_window",
+                    win_dimensions
+                );
+                matrix_window.document.open("text/html", "replace");
+                var i;
+                var timer = 0;
+                if (matrix_window.moveTo) matrix_window.moveTo(-10, -30);
+                if (matrix_window.resizeBy) matrix_window.resizeBy(0, 50);
+                matrix_window.document.write(
+                    "<body bgcolor=000000 text=00ff00 onBlur='self.focus()'>"
+                );
+                matrix_window.document.write("<font face=system>");
+                if (bold == true) matrix_window.document.write("<b>");
+                if (italic == true) matrix_window.document.write("<i>");
+                for (i = 0; i <= string.length; i++) {
+                    timer += Math.random() * speed;
+                    setTimeout(
+                        "matrix_window.document.write('" +
+                            string.charAt(i) +
+                            "');",
+                        timer
+                    );
+                }
+                timer += 2000;
+                setTimeout("matrix_window.close()", timer);
+            }
+            var messages = new Array(
+                "Olá, tudo bem contigo? Esse aqui é um exemplo básico de uma página que aparece em matrix! Se quiser utilizá-la, olhe o código fonte_ "
+            );
+            function GetRndIndex() {
+                return parseInt(Math.random() * messages.length);
+            }
+            function WriteRndMsg(bold, italic, speed) {
+                MatrixWrite(messages[GetRndIndex()], bold, italic, speed);
+            }
+            //  End -->
+        </script>
+
+        <script runat="server">
+            <!--
+            function MM_preloadImages() {
+                //v3.0
+                var d = document;
+                if (d.images) {
+                    if (!d.MM_p) d.MM_p = new Array();
+                    var i,
+                        j = d.MM_p.length,
+                        a = MM_preloadImages.arguments;
+                    for (i = 0; i < a.length; i++)
+                        if (a[i].indexOf("#") != 0) {
+                            d.MM_p[j] = new Image();
+                            d.MM_p[j++].src = a[i];
+                        }
+                }
+            }
+
+            function MM_openBrWindow(theURL, winName, features) {
+                //v2.0
+                window.open(theURL, winName, features);
+            }
+            //-->
+        </script>
+    </head>
+
+    <body
+        class="conteudo"
+        marginheight="25"
+        topmargin="25"
+        onLoad="javascript:WriteRndMsg(true, false, 400)"
+    >
+        <h1>Exemplo de Página Matrix</h1>
+    </body>
+</html>

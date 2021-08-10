@@ -1,0 +1,202 @@
+/* Arquivo CSS do grupo! Cada um que adicionar conteúdo nesse arquivo deve envia-lo por e-mail para o resto do grupo!!!
+As
+ */
+
+
+/* Fundo da Pagina  */
+.body {
+background-image:url(js.jpg);
+background-color:black;
+color: white;
+background-position: -150px 120px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+font-family:verdana;
+}
+
+/* classe usada no body da pagina de conteudo */
+.conteudo {
+background-color:#000000;
+color: white;
+}
+
+/* titulo usado no geral, se quiser criar um estilo eh soh criar uma classe e aplicar dentro das tags */
+h1 {
+font-family:Verdana;
+font-size:24px;
+text-align: center;
+}
+
+/* titulo usado no geral, se quiser criar um estilo eh soh criar uma classe e aplicar dentro das tags */
+h2 {
+font-family:Verdana;
+font-size:18px;
+
+}
+
+. divs {
+position:fixed;
+}
+
+#menu{
+	clear:both;
+	text-align:left;
+	clear:both;
+	color: white;
+	position:absolute
+	float: left;
+	width: 32%;
+	}
+
+#imgjava {
+float: left;
+
+}
+
+#imgjava2 {
+
+top: 0%;
+left: 23%;
+}
+
+
+/* aki eh a formatação dos links do site os links que sao usados no conteudo estão na classe .iframe!!! */
+a:link {
+text-decoration:none;
+color:#FFFFFF;
+}
+
+a:hover{
+text-decoration:none;
+color:black;
+}
+
+a:visited,hover {
+text-decoration:none;
+color:#000;
+}
+
+
+
+.menu a:link {
+
+background-color:#006666;
+border:medium; 
+border-style:outset; 
+border-color:#B7FCF7;
+color:white; 
+font-family:Verdana; 
+font-weight:bold
+}
+
+#apDiv1 {
+	clear:both;
+	color:#FFFFFF;
+	background-image:url(js.jpg);
+	font-family: Arial;
+	position:absolute;
+	left:37%;
+	top:80%;
+	width:617px;
+	height:541px;
+	background-repeat: no-repeat;
+	background-position: 10px -140px;
+		}
+
+
+iframe {
+width:610px;
+height:535px;
+scrolling:
+}
+
+
+/* CLasse dos links dentro do Iframe! Essa é importante galera! Para os links não sumirem no fundo da página!!!! coloquem class iframe na tag blockquote!!! */
+ 
+.iframe a:link {
+text-decoration:none;
+color:#FFFFFF;
+}
+
+.iframe  a:hover{
+text-decoration:none;
+color:red;
+}
+
+.iframe  a:visited,hover {
+text-decoration:none;
+color:#00CCCC;
+}
+
+#tudo { 
+	
+	 position:relative;  /*Contexto de posicionamento */
+	background:black;
+	margin:0 auto;
+	text-align:left;
+		}
+	
+#rodape {
+	background-color:#006666;
+	width:100%;
+	height:20px;
+	position: fixed;
+	bottom: 0; 
+	text-align:center;
+	font-family:verdana;
+	}
+	
+.menu {
+	width:220px;
+	margin:0;
+	float:left;
+	list-style:none;
+	}
+
+.menu li a, ul li a:visited {
+	height:2%;
+	font:12px verdana;
+	display:block;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	padding:3px;
+	background-color:#006666;
+border:medium; 
+border-style:outset; 
+border-color:#B7FCF7;
+	}
+.menu li a:hover {
+	background:#9f9;
+	color:#060;
+}
+	
+#ulprincipal li.um {
+	margin-bottom:0;
+	text-align:center;
+	}
+	
+#conteudo {
+	color:#FFFFFF;
+	font-family: Arial;
+	position:absolute;
+	width:590px;
+	height:541px;
+	text-align:justify;
+	margin: 10px 10px 10px 10px;
+		}
+
+		}
+
+/*class da pagina individual Jussie*/
+
+
+.h3format {
+text-align: center;
+border-style: groove;
+border-width: 10px 10px 10px 10px;
+border-color: #2e8b57;
+padding: 5px 0px 5px 0px;
+float: center;
+margin: 20px 20px 1em 1em;
+} 

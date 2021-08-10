@@ -1,0 +1,47 @@
+
+<html>
+
+<head>
+<title>Exemplo de Tempo de Acesso</title>
+<link rel="stylesheet" href="folhadeestilo.css" type="text/css" media="all">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<script language="JavaScript">
+startday = new Date();
+clockStart = startday.getTime();
+function initStopwatch() 
+{ 
+ var myTime = new Date(); 
+        var timeNow = myTime.getTime();  
+        var timeDiff = timeNow - clockStart; 
+        this.diffSecs = timeDiff/1000; 
+        return(this.diffSecs); 
+} 
+function getSecs() 
+{ 
+        var mySecs = initStopwatch(); 
+        var mySecs1 = ""+mySecs; 
+        mySecs1= mySecs1.substring(0,mySecs1.indexOf(".")) + " segundo(s)"; 
+        document.forms[0].timespent.value = mySecs1 
+        window.setTimeout('getSecs()',1000); 
+}
+</script>
+</head>
+
+<body class="conteudo" TEXT="#000000" BGCOLOR="#ffffff" LINK="#000000" VLINK="#000000" ALINK="#000000"
+onLoad="window.setTimeout('getSecs()',1)">
+<h1>Exemplo de Tempo de Acesso</h1>
+
+<p align="center"><b><font SIZE="+2" COLOR="#FFFFFF">Tempo de Acesso</font> </b></p>
+<font SIZE="-1" COLOR="#000000"><b>
+
+<p align="center">Você está aqui a:</p></b></font>
+
+<form>
+  <div align="center"><center><p><input size="15" name="timespent"></p>
+  </center></div>
+</form>
+
+<p align="center"><br>
+</p>
+</body>
+</html>
